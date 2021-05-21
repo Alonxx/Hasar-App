@@ -79,6 +79,7 @@ const getSign = (date) => {
 		) {
 			return true;
 		}
+		return false;
 	});
 
 	return result[0].name;
