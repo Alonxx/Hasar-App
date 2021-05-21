@@ -6,7 +6,7 @@ const WelcomePWA = () => {
 	return (
 		<StyledContainer>
 			<div className='div_logo'>
-				<img className='img_logo' src={logo}></img>
+				<img className='img_logo' src={logo} alt='logo'></img>
 			</div>
 
 			<h1 className='title'>Bienvenido a Hasar App</h1>

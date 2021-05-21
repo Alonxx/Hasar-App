@@ -4,12 +4,9 @@ import {Link, useHistory} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {addUserData} from '../../redux/actions';
 import Nav from '../Nav';
+import {arrayForm} from '../../utils'
 
-const arrayForm = [
-	{type: 'text', label: 'Nombre', name: 'name'},
-	{type: 'text', label: 'EMail', name: 'email'},
-	{type: 'date', label: 'Fecha de nacimiento', name: 'date'},
-];
+
 
 const FormUser = ({addUserData}) => {
 	const [Inputs, setInputs] = useState({});
@@ -51,7 +48,7 @@ const FormUser = ({addUserData}) => {
 			<div className='form'>
 				{arrayForm &&
 					arrayForm.map((el) => (
-						<div>
+						<div key={el.name}>
 							<label>{el.label}:</label>
 							<input
 								name={el.name}

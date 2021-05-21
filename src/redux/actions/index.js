@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import {USER_URL, HOROSCOPE_URL} from '../../utils/index';
+import {USER_URL, HOROSCOPE_URL} from '../../utils';
 
 export const getUser = () => async (dispatch) => {
 	try {

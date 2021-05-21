@@ -3,15 +3,17 @@ import {StyledContainer} from './styled';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getUser,clearUser} from '../../redux/actions';
-import singinLoder from '../../utils/Loader';
+import {singinLoder} from '../../utils';
 
 const SingIn = ({clearUser, getUser, User}) => {
 	useEffect(() => {
 		getUser();
+		//eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	useEffect(() => {
 		return () => clearUser();
+		//eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

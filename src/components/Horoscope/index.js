@@ -2,13 +2,11 @@ import React, {useState, useEffect} from 'react';
 import {StyledContainer} from './styled';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {getHoroscope,clearHoroscope} from '../../redux/actions/index';
-import getSign from '../../utils/getSign';
-import getBirthday from '../../utils/getBirthday';
+import {getHoroscope, clearHoroscope} from '../../redux/actions/index';
 import Nav from '../Nav';
-import {horoscopeLoader} from '../../utils/Loader';
+import {horoscopeLoader, getSign, getBirthday} from '../../utils';
 
-const Horoscope = ({clearHoroscope,getHoroscope, horoscope, userData}) => {
+const Horoscope = ({clearHoroscope, getHoroscope, horoscope, userData}) => {
 	const [Sign, setSign] = useState('');
 	const [daysBirthday, setdaysBirthday] = useState('');
 
@@ -16,13 +14,13 @@ const Horoscope = ({clearHoroscope,getHoroscope, horoscope, userData}) => {
 		getHoroscope();
 		userData.date && setSign(getSign(userData.date));
 		userData.date && setdaysBirthday(getBirthday(userData.date));
-
+		//eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	useEffect(()=>
-	{
-		return () => clearHoroscope()
-	},[])
+	useEffect(() => {
+		return () => clearHoroscope();
+		//eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	if (!horoscope || !userData || !Sign) {
 		return (
@@ -47,7 +45,7 @@ const Horoscope = ({clearHoroscope,getHoroscope, horoscope, userData}) => {
 				{userData && horoscope && Sign && (
 					<div>
 						<div className='image'>
-							<img src={`/images/${Sign}.png`}></img>
+							<img src={`/images/${Sign}.png`} alt='Sign'></img>
 						</div>
 						<div className='main'>
 							<span className='title'> Hola {userData.name}</span> <br />

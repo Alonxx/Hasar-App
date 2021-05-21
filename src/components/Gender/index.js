@@ -1,18 +1,11 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
-import {History, useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import {StyledContainer} from './styles';
-import Gender1 from '../../assets/gen-1.png';
-import Gender2 from '../../assets/gen-2.png';
-import Gender3 from '../../assets/gen-3.png';
 import {addGender} from '../../redux/actions';
 import Nav from '../Nav';
+import {genders} from '../../utils'
 
-const genders = [
-	{name: 'Male', img: Gender1},
-	{name: 'Non-binary', img: Gender2},
-	{name: 'Female', img: Gender3},
-];
 
 const Gender = ({addGender}) => {
 	const [Gender, setGender] = useState('none');
@@ -24,8 +17,6 @@ const Gender = ({addGender}) => {
 		addGender(e.target.name);
 		setError(false);
 	};
-
-	
 
 	const handleNext = () => {
 		Gender === 'none' ? setError(true) : history.push('/formuser');
@@ -48,8 +39,9 @@ const Gender = ({addGender}) => {
 			</div>
 			<div className='gender'>
 				{genders &&
-					genders.map((el) => (
+					genders.map((el, i) => (
 						<img
+							key={i}
 							onClick={handleonClick}
 							className={
 								el.name === Gender
