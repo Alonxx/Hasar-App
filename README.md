@@ -5,7 +5,7 @@ In Hasar App you can find out about your zodiac sign of the day.
 
 Hasar App is ready to work on any device as it is responsive
 
-App designed as PWA, you can download it on your device and continue using it offline.
+
 
 <hr>
 
