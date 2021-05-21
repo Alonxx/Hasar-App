@@ -2,6 +2,9 @@
 
 In Hasar App you can find out about your zodiac sign of the day.
 
+
+Hasar App is ready to work on any device as it is responsive
+
 App designed as PWA, you can download it on your device and continue using it offline.
 
 <hr>
@@ -14,8 +17,8 @@ App designed as PWA, you can download it on your device and continue using it of
 - React Icons
 - Axios
 <hr>
-
-<img src= "https://www.alonsodiaz.dev/images/carrousel/thequizzapp/home.png" width= "40%"> <img src= "https://www.alonsodiaz.dev/images/carrousel/thequizzapp/quizz.png" width= "40%">
+<p align="center">
+<img src= "https://github.com/Alonxx/Hasar-App/blob/main/public/images/sigin.png" width= "20%"> &nbsp;&nbsp;<img src= "https://github.com/Alonxx/Hasar-App/blob/main/public/images/form.png" width= "20%">&nbsp;&nbsp;<img src= "https://github.com/Alonxx/Hasar-App/blob/main/public/images/result.png" width= "20%"> </p>
 
 <hr>
 <h2> How to start? </h2>
