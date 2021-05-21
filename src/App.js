@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route} from 'react-router-dom';
+import {GlobalStyles} from './GlobalStyles';
+import SingIn from './components/SingIn';
+import Gender from './components/Gender';
+import FormUser from './components/FormUser';
+import Horscope from './components/Horoscope';
+import WelcomePWA from './components/WelcomePWA'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<React.Fragment>
+			<GlobalStyles />
+			<Route exact path='/' component={SingIn} />
+			<Route exact path='/Gender' component={Gender} />
+			<Route exact path='/Formuser' component={FormUser} />
+			<Route exact path='/Horoscope' component={Horscope} />
+			<Route exact path='/welcomepwa' component={WelcomePWA} />
+		</React.Fragment>
+	);
+};
 
 export default App;
