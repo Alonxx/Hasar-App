@@ -23,7 +23,7 @@
             "type": "image/png"
         }
     ],
-  "start_url": "/welcomepwa",
+  "start_url": "https://hasar-app.herokuapp.com/welcomepwa",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
