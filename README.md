@@ -5,10 +5,12 @@ In Hasar App you can find out about your zodiac sign of the day.
 
 Hasar App is ready to work on any device as it is responsive
 
+Hasar App has PWA functionality. You can install it on your device and browse offline.
+
 You can test the deployed version in the following link https://hasar-app.vercel.app/
 
 
-Hasar App has PWA functionality. You can install it on your device and browse offline
+
 
 
 
