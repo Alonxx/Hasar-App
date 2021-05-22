@@ -8,6 +8,9 @@ Hasar App is ready to work on any device as it is responsive
 You can test the deployed version in the following link https://hasar-app.vercel.app/
 
 
+Hasar App has PWA functionality. You can install it on your device and browse offline
+
+
 
 
 <hr>
