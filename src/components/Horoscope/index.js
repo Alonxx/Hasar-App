@@ -38,7 +38,7 @@ const Horoscope = ({clearHoroscope, getHoroscope, horoscope, userData}) => {
 			<StyledContainer>
 				<div className='header'>
 					<div className='header'>
-						<Nav link={'/formuser'} text={'Tu Horoscopo} />
+						<Nav link={'/formuser'} text={'Tu Horoscopo'} />
 					</div>
 				</div>
 
